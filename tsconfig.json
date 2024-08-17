@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "lib": ["es2018"],
+    "module": "commonjs",
+    "target": "es2018",
+    "incremental": false,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "noImplicitAny": false,
+    "sourceMap": true,
+    "outDir": "dist",
+    "baseUrl": ".",
+    "allowJs": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": false,
+    "emitDecoratorMetadata": true,
+    "paths": {
+      "*": ["node_modules/*", "src/types/*"],
+      "@logger/*": ["src/logger/*"],
+      "@appConfigs/*": ["src/appConfigs/*"],
+      "@interfaces/*": ["src/interfaces/*"],
+      "@controllers/*": ["src/controllers/*"],
+      "@models/*": ["src/models/*"],
+      "@services/*": ["src/services/*"],
+      "@utils/*": ["src/utils/*"],
+      "@app/*": ["src/app/*"],
+      "@connections/*": ["src/connections/*"]
+    }
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"],
+  "moduleResolution": "node"
+}

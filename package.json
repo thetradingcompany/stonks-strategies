@@ -1,0 +1,56 @@
+{
+  "name": "stonks-strategies",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node dist/server",
+    "start:inspect": "node --inspect dist/server",
+    "start:clean": "yarn run build:clean && yarn start",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "build:clean": "rm -rf dist/* && yarn build",
+    "clean": "rm -rf dist/*",
+    "lint": "eslint --ext .ts,.tsx .",
+    "lint:fix": "eslint --fix --ext .ts,.tsx ."
+  },
+  "_moduleAliases": {
+    "@interfaces": "dist/interfaces",
+    "@services": "dist/services",
+    "@models": "dist/models",
+    "@controllers": "dist/controllers",
+    "@connections": "dist/connections",
+    "@appConfigs": "dist/appConfigs",
+    "@utils": "dist/utils",
+    "@app": "dist/app",
+    "@logger": "dist/logger"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "dependencies": {
+    "@types/node": "^16.3.1",
+    "@types/pg-format": "^1.0.2",
+    "axios": "^0.21.1",
+    "cors": "^2.8.5",
+    "csv-parse": "^4.16.0",
+    "date-fns": "^2.25.0",
+    "fastify": "^2.15.0",
+    "fs": "^0.0.1-security",
+    "module-alias": "^2.2.2",
+    "pg": "^8.6.0",
+    "pg-format": "^1.0.4",
+    "reflect-metadata": "^0.1.13",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.28.2",
+    "@typescript-eslint/parser": "^4.28.3",
+    "eslint": "^7.30.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "prettier": "^2.3.2",
+    "typescript": "^3.9.5"
+  }
+}

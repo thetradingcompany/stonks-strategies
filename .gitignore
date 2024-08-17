@@ -1,0 +1,12 @@
+# Node
+node_modules
+dist
+
+# Local stuff
+data
+metadata
+.env
+.DS_Store
+
+# Webstorm
+.idea
